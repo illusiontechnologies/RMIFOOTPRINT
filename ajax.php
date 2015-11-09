@@ -1,4 +1,7 @@
 <?php
+				ini_set('display_errors', 1);
+				ini_set('display_startup_errors', 1);
+				error_reporting(E_ALL);
 				require_once("connect.php");
  
 		    	if(isset($_POST['city'])) {
@@ -20,19 +23,8 @@
 				exit("<pre>".print_r(sqlsrv_errors(), true)); }
 				echo "<ul class='postcd'>";
 				while ($rowq = sqlsrv_fetch_array($queryq)){ ?>
-				<li onclick='fillp("<?php echo $rowq[Postal_Code]; ?>")'><?php echo $rowq[Postal_Code]; ?></li>
+				<li onclick='fillp("<?php echo $rowq['Postal_Code']; ?>")'><?php echo $rowq['Postal_Code']; ?></li>
 				<?php } } ?> </ul>	
-				<?php
-				if(isset($_POST['country'])) {
-				$country = $_POST['country'];
-				$sqlq = "SELECT DISTINCT Country  FROM RmifootPrintnew WHERE Country LIKE '%$country%'";
-				$queryq = sqlsrv_query($conn, $sqlq);
-				if ($queryq === false){ 
-				exit("<pre>".print_r(sqlsrv_errors(), true)); }
-				echo "<ul class='countrycd'>";
-				while ($rowq = sqlsrv_fetch_array($queryq)){ ?>
-				<li onclick='fillc("<?php echo $rowq[Country]; ?>")'><?php echo $rowq[Country]; ?></li>
-				<?php } } ?> </ul>
 				<?php
 				if(isset($_POST['guestname'])) {
 				$guestname = $_POST['guestname'];
@@ -42,7 +34,7 @@
 				exit("<pre>".print_r(sqlsrv_errors(), true));}
 				echo "<ul style='margin-left: -39px;position:absolute;'>";
 				while ($rowq = sqlsrv_fetch_array($queryq)){ ?>
-				<li onclick='fillg("<?php echo $rowq[Guest_Name]; ?>")'><?php echo $rowq[Guest_Name]; ?></li>
+				<li onclick='fillg("<?php echo $rowq['Guest_Name']; ?>")'><?php echo $rowq['Guest_Name']; ?></li>
 				<?php } } ?> </ul>
 				<?php
 				if(isset($_POST['dtext'])) {
@@ -53,6 +45,7 @@
 				exit("<pre>".print_r(sqlsrv_errors(), true));}
 				echo "<ul style='margin-left: -39px;position:absolute;'>";
 				while ($rowq = sqlsrv_fetch_array($queryq)){ ?>
-				<li onclick='fillrn("<?php echo $rowq[No_Of_Nights]; ?>")'><?php echo $rowq[No_Of_Nights]; ?></li>
+				<li onclick='fillrn("<?php echo $rowq['No_Of_Nights']; ?>")'><?php echo $rowq['No_Of_Nights']; ?>
+				</li>
 				<?php } } ?> </ul>
 				
