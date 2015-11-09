@@ -1,0 +1,42 @@
+body { background:url("background.jpg") repeat scroll 0 0 / cover ; font: 62.5% "Trebuchet MS",sans-serif;margin: 50px;}
+.container { width: 800px;border: 1px solid #C4CDE0;border-radius: 2px;margin: 0 auto;height: 400px;
+background:#fff;padding-left:10px;}
+.button { background:#003fff; color:#fff; font-size:16px; font-weight:bold;padding:3px 6px; text-decoration:none;
+cursor:pointer; } 
+input[type=text]{ padding: 0;height: 30px;left: 0;outline: none; border: 1px solid #cdcdcd; border-color: rgba(0,0,0,.15);background-color: #ffffff !important; border-radius:3px;width:200px;}
+.headingt1{ color:#FFFFFF;font-size:15px;font-weight:700;}
+.demoHeaders { margin-top: 2em;}
+#dialog-link{ padding: .4em 1em .4em 20px;text-decoration: none;position: relative;}
+#dialog-link span.ui-icon { margin: 0 5px 0 0;position: absolute;left: .2em;top: 50%;margin-top: -8px;}
+#icons { margin: 0;padding: 0;}
+#icons li { margin: 2px;position: relative;padding: 4px 0;cursor: pointer;float: left;list-style: none;}
+#icons span.ui-icon { float: left;margin: 0 4px;}
+.fakewindowcontain .ui-widget-overlay { position: absolute;}
+.filter{ padding:10px;font-size:25px}
+input[type="submit"] {
+text-decoration:none;background: #003fff none repeat scroll 0 0 !important;padding: 5px;text-decoration: none;
+color:white;font-size:20px;margin: 0 0 0 5px;border:none;border-radius:5px;}
+ul{ list-style: none;width: 180px;}
+li{ display: block;padding: 5px;background-color: #ccc;border-bottom: 1px solid #367;color:#000000;}
+#content{ padding:50px;width:500px; border:1px solid #666;float:left;}
+#clear{ clear:both;}
+#logo { width: 220px; height: auto;margin:10px 0 0 33px;}
+#logo1{ width: 200px; height: auto;margin:0 0 0 250px;}
+#box{ float:left;margin:0 0 20px 0;text-align:justify;}
+.rmi_table{ border:none;width:100%;background:rgb(224,237,343) ;margin:21px 0 0 0;color:#000000;}
+.rmi_tabletd{ font-size:12px;font:bold;text-align:left;}
+.rmi_table tbody{ border:none;width:100%;}
+.rmi_table tbody tr{ border:solid 1px #000;}
+.rmi_table tbody tr td{ border-color: #ccc #ccc #ccc;border-style: solid none solid solid;border-width: 1px medium 1px 1px;padding: 0 10px;}
+.rmi_table tbody tr.headingt { width:100%;height:auto;}
+.rmi_table tbody tr.headingt td { border-color: #ccc #ccc;border-style: solid solid none;border-width: 1px 1px medium;font-size: 14px;font-weight: bold;text-align: center;}
+.rmi_table tbody tr.headingt1 { width:100%;height:auto;}
+.rmi_table tbody tr.headingt1 td { border-color: #ccc;border-style: solid;border-width: 1px;font-size: 14px;font-weight: 400;text-align: center;}
+.export-csv{ text-decoration:none; background: #003fff none repeat scroll 0 0;padding-bottom: 6px; padding-top: 8px; padding-left:5px;padding-right:5px;  text-decoration: none;width: 76% !important;color:white;font-size:20px;margin: 8px 8px 7px 8px;border-radius:5px;}
+.postcd{ float: left;list-style: outside none none;margin-left: -39px;width: 102px;position:absolute;}
+.countrycd{ float: left;list-style: outside none none;margin-left: -39px;width: 102px;position:absolute;}
+.indextable{ background-color:#000000;color:#FFFFFF;border-radius:25px;opacity:0.68;" }
+.countrysel{ height:30px;background-color: #e0e0e0;width:200px;background-color: #ffffff;border-radius:3px;}
+.stjames{ height:30px;background-color: #e0e0e0;width:200px;background-color: #ffffff;border-radius:3px;}
+#roomtype{ height:30px;width:200px;background-color:  #ffffff;border-radius:3px;}
+.roption{ width:150px;background-color: #ffffff;border-radius:3px;}
