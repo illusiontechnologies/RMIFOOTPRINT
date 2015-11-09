@@ -45,13 +45,14 @@
 				<li onclick='fillg("<?php echo $rowq[Guest_Name]; ?>")'><?php echo $rowq[Guest_Name]; ?></li>
 				<?php } } ?> </ul>
 				<?php
-				if(isset($_POST['dtext'])){
+				if(isset($_POST['dtext'])) {
 				$dtext = $_POST['dtext'];
-				$sqlq = "SELECT DISTINCT No_Of_Nights  FROM RmifootPrintnew WHERE No_Of_Nights LIKE '%$dtext%'";
+				$sqlq = "SELECT DISTINCT No_Of_Nights FROM RmifootPrintnew WHERE No_Of_Nights LIKE '%$dtext%' ORDER 		                BY No_Of_Nights ASC";
 				$queryq = sqlsrv_query($conn, $sqlq);
 				if ($queryq === false){ 
-				exit("<pre>".print_r(sqlsrv_errors(), true));}		
+				exit("<pre>".print_r(sqlsrv_errors(), true));}
 				echo "<ul style='margin-left: -39px;position:absolute;'>";
-				while ($rowq = sqlsrv_fetch_array($queryq)){?>
+				while ($rowq = sqlsrv_fetch_array($queryq)){ ?>
 				<li onclick='fillrn("<?php echo $rowq[No_Of_Nights]; ?>")'><?php echo $rowq[No_Of_Nights]; ?></li>
 				<?php } } ?> </ul>
+				
